@@ -8,6 +8,9 @@
     domain_name: "nikvi.fun"
     instances:
     - mongodb
+    - redis
+    - mysql
+    - rabbitmq
 
   tasks:
   - name: creating ec2 instances
