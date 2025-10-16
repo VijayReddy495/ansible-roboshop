@@ -6,11 +6,11 @@
     sg_id: "sg-0411021f836b1fbcc"
     zone_id: "Z08060901N40TB60HLP0H"
     domain_name: "nikvi.fun"
-    instances:
-    - mongodb
-    - redis
-    - mysql
-    - rabbitmq
+    # instances:
+    # - mongodb
+    # - redis
+    # - mysql
+    # - rabbitmq
 
   tasks:
   - name: creating ec2 instances
