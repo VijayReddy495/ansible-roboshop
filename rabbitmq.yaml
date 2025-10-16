@@ -20,11 +20,11 @@
 
   - name: Create RabbitMQ user and set permissions
     community.rabbitmq.rabbitmq_user:
-    user: roboshop
-    password: roboshop123 # Consider using Ansible Vault for sensitive data
-    permissions:
-      - vhost: / # The virtual host to grant permissions on
-        configure_priv: ".*" # Regex for configure permissions (e.g., manage queues, exchanges)
-        read_priv: ".*"      # Regex for read permissions (e.g., consume messages)
-        write_priv: ".*"     # Regex for write permissions (e.g., publish messages      
-    state: present       # Ensures the user exists    
+      user: roboshop
+      password: roboshop123 # Consider using Ansible Vault for sensitive data
+      permissions:
+        - vhost: / # The virtual host to grant permissions on
+          configure_priv: ".*" # Regex for configure permissions (e.g., manage queues, exchanges)
+          read_priv: ".*"      # Regex for read permissions (e.g., consume messages)
+          write_priv: ".*"     # Regex for write permissions (e.g., publish messages      
+      state: present       # Ensures the user exists    
