@@ -12,9 +12,9 @@
     # - mysql
     # - rabbitmq
     # - catalogue
-    - user
-    - cart
-    - payment
+    # - user
+    # - cart
+    # - payment
 
   tasks:
   - name: creating ec2 instances
